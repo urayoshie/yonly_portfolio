@@ -1,0 +1,312 @@
+@import url(sanitize.css);
+
+body {
+  background-color: black;
+  max-width: 100%;
+}
+
+.facebook img {
+  width: 25px;
+  margin-top: -41px;
+  margin-left: 90px;
+  float: left;
+}
+
+.instagram img {
+  width: 25px;
+  float: left;
+  margin-top: -40px;
+  margin-left: 135px;
+}
+
+.twitter img {
+  width: 25px;
+  margin-left: 180px;
+  margin-top: -39px;
+  float: left;
+}
+
+.icon:hover {
+  -webkit-animation: zoom 0.3s;
+  animation: zoom 0.3s;
+}
+
+@-webkit-keyframes zoom {
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@keyframes zoom {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.about {
+  color: #707070;
+  font-family: 'Shippori Mincho', serif;
+  writing-mode: vertical-lr;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 275px;
+}
+
+p.myphoto-img img {
+  /* max-width: 14%; */
+  max-width: 180px;
+}
+
+.about-content {
+  font-family: 'Shippori Mincho', serif;
+  /* float: right; */
+  margin-top: -12px;
+  margin-right: 65px;
+  color: #fff;
+  line-height: 30px;
+}
+
+/* 
+@media screen and (max-width: 1024px) {
+  .name {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 1px;
+    width: 1024px;
+  }
+
+  .main-img {
+    margin: 30px auto;
+  }
+
+  .list {
+    font-size: 23px;
+    float: left;
+    margin-top: 15px;
+    padding-left: 220px;
+    width: 1024px;
+  }
+} */
+/* 
+@media screen and (max-width: 768px) {
+  .name {
+    width: 768px;
+  }
+
+  .list {
+    padding-left: 100px;
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .name {
+    width: 540px;
+  }
+
+  .list {
+    margin-top: 15px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .name {
+    width: 414px;
+  }
+
+  .list {
+    font-size: 15px;
+    width: 414px;
+  }
+
+  #nav li {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .name {
+    width: 375px;
+  }
+
+  .list {
+    font-size: 14px;
+    width: 375px;
+    margin-left: -7px;
+  }
+
+  #nav li {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .name {
+    width: 360px;
+  }
+
+  .list {
+    font-size: 14px;
+    width: 360px;
+    margin-left: -15px;
+  }
+
+  #nav li {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .name {
+    width: 320px;
+  }
+
+  .list {
+    font-size: 13px;
+    margin-left: -25px;
+    width: 350px;
+  }
+
+  #nav li {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .name {
+    width: 280px;
+  }
+
+  .list {
+    font-size: 11px;
+    margin-left: -20px;
+    width: 280px;
+  }
+
+  #nav li {
+    width: 60px;
+  }
+} */
+/*------------------------------
+  ここから下がハンバーガーメニューに関するCSS
+------------------------------*/
+
+.drawer {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+/* チェックボックスは非表示に */
+.drawer-hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer-open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  /* 重なり順を一番上に */
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線のうち一番上の棒の位置調整 */
+.drawer-open span:before {
+  bottom: 10px;
+}
+
+/* 三本線のうち一番下の棒の位置調整 */
+.drawer-open span:after {
+  top: 10px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer-check:checked ~ .drawer-open span {
+  background: black;
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer-check:checked ~ .drawer-open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer-check:checked ~ .drawer-open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* メニューのデザイン*/
+.drawer-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #fff;
+  transition: 0.5s;
+  color: white;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-check:checked ~ .drawer-content {
+  left: 0px;
+  /* メニューを画面に入れる */
+  width: 450px;
+  height: 610px;
+  background-color: #a7a3a3;
+}
+
+#li_b {
+  text-align: center;
+  margin: 70px auto;
+}
+
+#li_w {
+  text-align: center;
+  margin: 70px auto;
+}
+
+#li_c {
+  text-align: center;
+  margin: 70px auto;
+}
+
+#li_f {
+  text-align: center;
+  margin: 70px auto;
+}
+
+#li_t {
+  text-align: center;
+  margin: 70px auto;
+}
+
+#li_i {
+  text-align: center;
+  margin: 70px auto;
+}

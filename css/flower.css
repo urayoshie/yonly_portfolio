@@ -1,0 +1,19 @@
+@import url(sanitize.css);
+
+.swiper-slide {
+  width: 255px;
+  height: 255px;
+}
+
+.swiper-container {
+  width: 500px;
+  margin-top: 50px;
+}
+
+.modaal-content-container img {
+  width: 200px;
+}
+
+p.default_img img {
+  width: 400px;
+}
