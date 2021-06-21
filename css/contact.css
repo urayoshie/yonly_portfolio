@@ -159,18 +159,18 @@
 }
 
 /* 問い合わせフォーム */
-.Form {
+.form {
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   max-width: 720px;
 }
 @media screen and (max-width: 480px) {
-  .Form {
+  .form {
     margin-top: 40px;
   }
 }
-.Form-Item {
+.form-group {
   border-top: 1px solid #ddd;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -179,7 +179,7 @@
   align-items: center;
 }
 @media screen and (max-width: 480px) {
-  .Form-Item {
+  .form-group {
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 16px;
@@ -187,10 +187,10 @@
     flex-wrap: wrap;
   }
 }
-.Form-Item:nth-child(5) {
+.form-group:nth-child(5) {
   border-bottom: 1px solid #ddd;
 }
-.Form-Item-Label {
+.form-label {
   width: 100%;
   max-width: 248px;
   letter-spacing: 0.05em;
@@ -198,23 +198,23 @@
   font-size: 18px;
 }
 @media screen and (max-width: 480px) {
-  .Form-Item-Label {
+  .form-label {
     max-width: inherit;
     display: flex;
     align-items: center;
     font-size: 15px;
   }
 }
-.Form-Item-Label.isMsg {
+.form-label.isMsg {
   margin-top: 8px;
   margin-bottom: auto;
 }
 @media screen and (max-width: 480px) {
-  .Form-Item-Label.isMsg {
+  .form-label.isMsg {
     margin-top: 0;
   }
 }
-.Form-Item-Label-Required {
+.form-label-required {
   border-radius: 6px;
   margin-right: 8px;
   padding-top: 8px;
@@ -227,7 +227,7 @@
   font-size: 14px;
 }
 @media screen and (max-width: 480px) {
-  .Form-Item-Label-Required {
+  .form-label-required {
     border-radius: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -235,7 +235,7 @@
     font-size: 10px;
   }
 }
-.Form-Item-Input {
+.form-control {
   border: 1px solid #ddd;
   border-radius: 6px;
   margin-left: 40px;
@@ -249,7 +249,7 @@
   font-size: 18px;
 }
 @media screen and (max-width: 480px) {
-  .Form-Item-Input {
+  .form-control {
     margin-left: 0;
     margin-top: 18px;
     height: 40px;
@@ -257,7 +257,7 @@
     font-size: 15px;
   }
 }
-.Form-Item-Textarea {
+.form-group-Textarea {
   border: 1px solid #ddd;
   border-radius: 6px;
   margin-left: 40px;
@@ -271,7 +271,7 @@
   font-size: 18px;
 }
 @media screen and (max-width: 480px) {
-  .Form-Item-Textarea {
+  .form-group-Textarea {
     margin-top: 18px;
     margin-left: 0;
     height: 200px;
@@ -279,7 +279,7 @@
     font-size: 15px;
   }
 }
-.Form-Btn {
+.form-button {
   border-radius: 6px;
   margin-top: 32px;
   margin-left: auto;
@@ -294,12 +294,21 @@
   font-weight: bold;
   font-size: 20px;
 }
+
+.form-button:disabled {
+  background: gray;
+}
+
 @media screen and (max-width: 480px) {
-  .Form-Btn {
+  .form-button {
     margin-top: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
     width: 160px;
     font-size: 16px;
   }
+}
+
+.invalid {
+  border-color: red;
 }

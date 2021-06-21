@@ -1,9 +1,13 @@
+import { validateForm } from './form-validation.js';
+
 window.addEventListener('DOMContentLoaded', () => {
   const url = `https://cheyonly.microcms.io/api/v1/contact`;
   const headers = {
     'X-WRITE-API-KEY': '880ecf07-15fc-4e55-a407-74f7b6ce96dc',
     'Content-Type': 'application/json',
   };
+  const EMAIL_REGEX = /^[\w+\-.]+@[a-z\d\-.]+\.[a-z]+$/;
+  const TEL_REGEX = /^0\d{1,3}-?\d{2,4}-?\d{3,4}$/;
 
   const getPostParams = () => {
     const name = document.getElementById('contact-name').value;
@@ -14,32 +18,47 @@ window.addEventListener('DOMContentLoaded', () => {
     return JSON.stringify({ name, email, tel, body });
   };
 
-  const button = document.getElementById('contact-button');
-  let loading = false;
+  const postForm = async () => {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers,
+      body: getPostParams(),
+    });
+    if (!response.ok) throw new Error(response.statusText);
+    location.href = '/contact-success.html';
+  };
 
-  button.addEventListener('click', async (e) => {
-    e.preventDefault;
-    form.checkValidity();
+  validateForm('.form', postForm);
 
-    if (loading) return;
-    console.log('送信ボタンが押されました');
-    loading = true;
-    button.value = '送信中……';
-    button.disabled = true;
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+  // if (loading) return;
+  // const name = document.getElementById('contact-name');
+  // const email = document.getElementById('contact-email');
+  // const tel = document.getElementById('contact-tel');
+  // const body = document.getElementById('contact-body');
 
-      // const response = await fetch(url, {
-      //   method: 'POST',
-      //   headers,
-      //   body: getPostParams(),
-      // });
-      // if (!response.ok) throw new Error();
-      location.href = '/contact-success.html';
-    } catch (e) {
-      console.log('送信に失敗しました。');
-      button.value = '送信';
-      button.removeAttribute('disabled');
-    }
-  });
+  // エラーがあればエラーメッセージを追加
+
+  // エラーメッセージが全てなければ true, エラーメッセージが１つでもあれば false とする
+  // const isValid = [...document.querySelectorAll('.valid-feedback')].every((e) => e.textContent === '');
+  // if (!isValid) return;
+
+  // console.log('送信ボタンが押されました');
+  // loading = true;
+  // button.value = '送信中……';
+  // button.disabled = true;
+  // try {
+  //   await new Promise((resolve) => setTimeout(resolve, 2000));
+
+  //   // const response = await fetch(url, {
+  //   //   method: 'POST',
+  //   //   headers,
+  //   //   body: getPostParams(),
+  //   // });
+  //   // if (!response.ok) throw new Error();
+  //   location.href = '/contact-success.html';
+  // } catch (e) {
+  //   console.log('送信に失敗しました。');
+  //   button.value = '送信';
+  //   button.removeAttribute('disabled');
+  // }
 });
