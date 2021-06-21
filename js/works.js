@@ -27,14 +27,16 @@ window.addEventListener('DOMContentLoaded', () => {
   <div class="inline">
     <img src="${data.image.url}" alt="" />
   </div>
-  <div id="inline-${data.id}" style="display:none;">
+  <div class="works-modal" id="inline-${data.id}" style="display:none;">
   <p class="default_img">
     <img src="${data.default_img.url}?w=300" alt="" />
-  </p>    
-    <h2>${data.title}</h2>
-    <div>${data.year}</div>
-    <div>${data.size}</div>
-    <div>${data.medium}</div>
+  </p>
+  <div class="works-description">
+    <h2 class="works-title">${data.title}</h2>
+    <div class="works-year">${data.year}</div>
+    <div class="works-size">${data.size}</div>
+    <div class="works-medium">${data.medium}</div></div>    
+    
   </div>
 </div>
     `;

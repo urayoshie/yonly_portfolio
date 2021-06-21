@@ -71,6 +71,7 @@
           /></a>
         </div>
       </header>
+      <!-- お問い合わせフォーム -->
       <div class="form">
         <div class="form-group">
           <p class="form-label"><span class="form-label-required">必須</span>氏名</p>
@@ -81,7 +82,7 @@
             placeholder="例）山田太郎"
             data-validate="required|max:30"
           />
-          <div class="valid-feedback"></div>
+          <div class="invalid-feedback"></div>
         </div>
         <div class="form-group">
           <p class="form-label"><span class="form-label-required">必須</span>電話番号</p>
@@ -92,7 +93,7 @@
             placeholder="例）000-0000-0000"
             data-validate="tel"
           />
-          <div class="valid-feedback"></div>
+          <div class="invalid-feedback"></div>
         </div>
         <div class="form-group">
           <p class="form-label"><span class="form-label-required">必須</span>メールアドレス</p>
@@ -103,18 +104,19 @@
             placeholder="例）example@gmail.com"
             data-validate="email"
           />
-          <div class="valid-feedback"></div>
+          <div class="invalid-feedback"></div>
         </div>
         <div class="form-group">
           <p class="form-label isMsg"><span class="form-label-required">必須</span>お問い合わせ内容</p>
           <textarea
             id="contact-body"
-            class="form-group-Textarea"
+            class="form-control"
             cols="35"
             rows="4"
             data-validate="required|max:3000"
           ></textarea>
-          <div class="valid-feedback"></div>
+          <div class="form-count"><span class="current"></span>/<span class="max"></span></div>
+          <div class="invalid-feedback"></div>
         </div>
         <input type="submit" id="contact-button" class="form-button" value="送信する" />
       </div>

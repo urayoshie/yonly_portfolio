@@ -10,10 +10,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/portrait.css" />
+    <link rel="stylesheet" href="css/processing.css" />
   </head>
 
   <body>
+    <header>
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="drawer">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer-check" class="drawer-open"><span></span></label>
+
+        <!-- メニュー -->
+        <nav class="drawer-content">
+          <ul class="drawer-list">
+            <li class="drawer-item" id="li_b">
+              <a href="#" target="_blank">BLOG</a>
+            </li>
+            <!-- /.drawer-item -->
+            <li class="drawer-item" id="li_w">
+              <a href="#2" target="_blank">WORKS</a>
+            </li>
+            <!-- /.drawer-item -->
+            <li class="drawer-item" id="li_c">
+              <a href="file:///Users/urayoshie/Desktop/portfolio_practice/contact/index.html" target="_blank"
+                >CONTACT</a
+              >
+            </li>
+            <!-- /.drawer-item -->
+            <li class="drawer-item" id="li_f">
+              <a href="https://www.facebook.com/yoshie.ura.77" target="_blank">Facebook</a>
+            </li>
+            <!-- /.drawer-item -->
+            <li class="drawer-item" id="li_t">
+              <a href="https://twitter.com/uracobo" target="_blank">Twitter</a>
+            </li>
+            <!-- /.drawer-item -->
+            <li class="drawer-item" id="li_i">
+              <a href="https://www.instagram.com/yoshie102217/" target="_blank">Instagram</a>
+            </li>
+            <!-- /.drawer-item -->
+          </ul>
+          <!-- /.drawer-list -->
+        </nav>
+      </div>
+      <div class="facebook">
+        <a href="https://instagram.com/ushibudou?utm_medium=copy_link" target="_blank"
+          ><img src="img/facebook.png" class="icon" alt=""
+        /></a>
+      </div>
+      <div class="instagram">
+        <a href="https://instagram.com/ushibudou?utm_medium=copy_link" target="_blank"
+          ><img src="img/instagram.png" class="icon" alt=""
+        /></a>
+      </div>
+      <div class="twitter">
+        <a href="https://instagram.com/ushibudou?utm_medium=copy_link" target="_blank"
+          ><img src="img/twitter.png" class="icon" alt=""
+        /></a>
+      </div>
+    </header>
     <div class="swiper-container">
       <div class="swiper-wrapper"></div>
       <div class="swiper-button-prev swiper-button-white"></div>
@@ -25,5 +83,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
       <script src="js/works.js"></script>
     </div>
+    <p class="works-comment">画像をクリックすると詳細をご確認いただけます</p>
+    <div class="processing-title">Processing</div>
   </body>
 </html>
