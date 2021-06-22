@@ -3,7 +3,7 @@ $(document).ready(function () {
   //【ページングに必要な情報】
 
   //★1ページに表示したい記事の数
-  const limit = 3;
+  const limit = 2;
 
   const page = parseInt(new URLSearchParams(window.location.search).get('page')) || 1;
   const offset = limit * (page - 1);
@@ -24,17 +24,17 @@ $(document).ready(function () {
     .then((json) => {
       for (const content of json.contents) {
         //タイトル
-        const title = '<h3>' + content.title + '</h3>';
+        const title = '<h3 class="news-title">' + content.title + '</h3>';
 
         //日付
-        const date = "<p class='date'>" + content.date.substr(0, 10) + '</p>';
+        const date = "<p class='news-date'>" + content.date.substr(0, 10) + '</p>';
 
         //画像1
-        const img01 = content.image01 && content.image01.url;
-        const disp_img01 = img01 && "<img src='" + img01 + "?w=200'>";
+        const img01 = (content.image01 && content.image01.url) || '../img/noimage.jpg';
+        const disp_img01 = img01 && "<img src='" + img01 + "?w=190'>";
 
         //テキスト
-        const text = '<div class="box-text">' + content.text + '</div>';
+        const text = `<div class="news-text">${content.text || ''}</div>`;
 
         //表示部分
         $('#content').append('<article class="article">' + title + date + (disp_img01 || '') + text + '</article>');
@@ -46,7 +46,7 @@ $(document).ready(function () {
       const pageCount = Math.ceil(totalCount / limit);
       const pager = `<ul class='pager'>${
         //前のページリンクを表示
-        page >= 2 ? `<li><a href='./news.html?page=${page - 1}'>前のページへ</a></li>` : ''
+        page >= 2 ? `<li><a href='./news.html?page=${page - 1}'>&#9664;</a></li>` : ''
       }${
         //必要なページを表示
         Array.from(Array(pageCount))
@@ -59,7 +59,7 @@ $(document).ready(function () {
           .join('\n')
       }${
         //次のページリンクを表示
-        page < pageCount ? `<li><a href='./news.html?page=${page + 1}'>次のページへ</a></li>` : ''
+        page < pageCount ? `<li><a href='./news.html?page=${page + 1}'>&#9658;</a></li>` : ''
       }</ul>`;
       $('#content').append(pager);
       //========================
