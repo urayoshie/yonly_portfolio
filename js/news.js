@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(document).ready(function () {
   //========================
   //【ページングに必要な情報】

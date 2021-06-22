@@ -43,154 +43,6 @@ body {
   }
 }
 
-.about {
-  color: #707070;
-  font-family: 'Shippori Mincho', serif;
-  writing-mode: vertical-lr;
-  font-size: 26px;
-  text-align: center;
-  margin-top: 275px;
-}
-
-p.myphoto-img img {
-  /* max-width: 14%; */
-  max-width: 180px;
-}
-
-.about-content {
-  font-family: 'Shippori Mincho', serif;
-  /* float: right; */
-  margin-top: -12px;
-  margin-right: 65px;
-  color: #fff;
-  line-height: 30px;
-}
-
-/* 
-@media screen and (max-width: 1024px) {
-  .name {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 1px;
-    width: 1024px;
-  }
-
-  .main-img {
-    margin: 30px auto;
-  }
-
-  .list {
-    font-size: 23px;
-    float: left;
-    margin-top: 15px;
-    padding-left: 220px;
-    width: 1024px;
-  }
-} */
-/* 
-@media screen and (max-width: 768px) {
-  .name {
-    width: 768px;
-  }
-
-  .list {
-    padding-left: 100px;
-    width: 768px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .name {
-    width: 540px;
-  }
-
-  .list {
-    margin-top: 15px;
-    padding-right: 0;
-    padding-left: 0;
-    width: 540px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .name {
-    width: 414px;
-  }
-
-  .list {
-    font-size: 15px;
-    width: 414px;
-  }
-
-  #nav li {
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .name {
-    width: 375px;
-  }
-
-  .list {
-    font-size: 14px;
-    width: 375px;
-    margin-left: -7px;
-  }
-
-  #nav li {
-    width: 75px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .name {
-    width: 360px;
-  }
-
-  .list {
-    font-size: 14px;
-    width: 360px;
-    margin-left: -15px;
-  }
-
-  #nav li {
-    width: 75px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .name {
-    width: 320px;
-  }
-
-  .list {
-    font-size: 13px;
-    margin-left: -25px;
-    width: 350px;
-  }
-
-  #nav li {
-    width: 70px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .name {
-    width: 280px;
-  }
-
-  .list {
-    font-size: 11px;
-    margin-left: -20px;
-    width: 280px;
-  }
-
-  #nav li {
-    width: 60px;
-  }
-} */
 /*------------------------------
   ここから下がハンバーガーメニューに関するCSS
 ------------------------------*/
@@ -309,4 +161,167 @@ p.myphoto-img img {
 #li_i {
   text-align: center;
   margin: 70px auto;
+}
+
+/* ABOUT */
+.about {
+  color: #707070;
+  font-family: 'Shippori Mincho', serif;
+  writing-mode: vertical-lr;
+  font-size: 26px;
+  text-align: center;
+  margin-top: -420px;
+  margin-right: 730px;
+  float: right;
+}
+
+p.myphoto-img img {
+  max-width: 180px;
+}
+
+.myphoto-img {
+  /* background-color: burlywood; */
+  width: 80%;
+  max-width: 730px;
+  height: 650px;
+  padding-left: 250px;
+  padding-top: 200px; 
+}
+
+.about-content {
+  background-color: #5e2946;
+  width: 80%;
+  max-width: 725px;
+  height: 750px;
+  font-family: 'Shippori Mincho', serif;
+  float: right;
+  color: #fff;
+  line-height: 30px;
+  margin-top: -750px;
+}
+
+.introduction {
+  /* background-color: rgb(74, 120, 29); */
+  margin-left: 260px;
+  margin-top: 230px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .myphoto-img {
+  /* background-color: burlywood; */
+  padding-left: 150px;
+  padding-top: 200px;
+}
+
+.about-content {
+  width: 50%;
+}
+.introduction {
+  /* background-color: rgb(74, 120, 29); */
+  margin-left: 150px;
+}
+.about {
+  margin-top: -420px;
+  margin-right: 525px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+.myphoto-img {
+  padding-left: 100px;
+}
+
+.introduction {
+  margin-left: 60px;
+}
+.about {
+  margin-right: 395px;
+}
+}
+
+@media screen and (max-width: 540px) {
+.myphoto-img {
+  padding-left: 50px;
+}
+
+.introduction {
+  margin-left: 40px;
+  font-size: 12px;
+}
+.about {
+  margin-right: 270px;
+  font-size: 22px;
+}
+}
+
+@media screen and (max-width: 414px) {
+.myphoto-img {
+  width: 80%;
+  height:1px;
+  padding-left: 120px;
+  padding-top: 30px; 
+}
+
+.about {
+  margin: 230px auto;
+  writing-mode: horizontal-tb;
+  float: none;
+}
+
+.introduction {
+  padding-top: 60px;
+  margin-left: 110px;
+  font-size: 12px;
+}
+
+.about-content {
+  float: none;
+  width: 100%;
+  height: 360px;
+  margin-top: -230px;
+  line-height: 25px;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .myphoto-img {
+  padding-left: 100px;
+}
+
+.introduction {
+  margin-left: 90px;
+}
+
+}
+
+@media screen and (max-width: 360px) {
+.myphoto-img {
+  padding-left: 90px;
+}
+
+.introduction {
+  margin-left: 80px;
+}
+}
+
+@media screen and (max-width: 320px) {
+.myphoto-img {
+  padding-left: 70px;
+}
+
+.introduction {
+  margin-left: 70px;
+}
+}
+
+@media screen and (max-width: 280px) {
+.myphoto-img {
+  padding-left: 50px;
+}
+
+.introduction {
+  margin-left: 40px;
+}
 }
