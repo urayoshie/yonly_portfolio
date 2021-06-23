@@ -206,19 +206,6 @@ a {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 375px) {
-  .copywright {
-  font-size: 10px;
-}
-}
-
-@media screen and (max-width: 360px) {
-
-.copywright {
-  margin-bottom: 5px;
-}
-}
-
 .success-message {
   background: #fff;
   width: 100%;
@@ -270,4 +257,132 @@ a {
 .link:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+.success-background {
+  max-width: 1024px;
+}
+
+.list {
+  margin-left: 245px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.list {
+  margin-left: 100px;
+}
+}
+
+@media screen and (max-width: 540px) {
+.success-background {
+  max-width: 540px;
+}
+
+.list {
+  margin-left: -10px;
+}
+
+.success-message {
+  max-width: 500px;
+  padding-left: 90px;
+}
+}
+
+@media screen and (max-width: 414px) {
+.success-background {
+  max-width: 370px;
+  padding-left: 50px;
+}
+
+.copywright {
+  font-size: 10px;
+  padding-bottom: 15px;
+}
+
+.success-message {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.success {
+  font-size: 15px;
+}
+
+.success-response {
+  font-size: 12px;
+}
+
+#nav li {
+  width: 70px;
+}
+
+.list {
+  margin-left: -20px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+.success-background {
+  max-width: 350px;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.success-message {
+  padding-left: 30px;
+}
+
+.list {
+  margin-left: -20px;
+}
+}
+
+@media screen and (max-width: 320px) {
+.success-background {
+  max-width: 300px;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.success-message {
+  padding-left: 30px;
+}
+
+.success {
+  font-size: 14px;
+}
+
+.success-response {
+  font-size: 10px;
+}
+
+.list {
+  font-size: 14px;
+  margin-left: -20px;
+}
+
+#nav li {
+  width: 60px;
+}
+}
+
+@media screen and (max-width: 280px) {
+.success-background {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.success-message {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.list {
+  font-size: 14px;
+  margin-left: -30px;
+}
+
 }
