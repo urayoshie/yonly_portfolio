@@ -1,11 +1,12 @@
 @import url(sanitize.css);
 
 body {
-  background-color: black;
+  background: #000;
 }
-.background {
-  width: 100vw;
-  height: 100vh;
+.success-background {
+  width: 100%;
+  max-width: 1430px;
+  /* background: chocolate; */
 }
 
 .facebook img {
@@ -46,220 +47,6 @@ body {
   }
 }
 
-.name {
-  color: #707070;
-  font-family: 'Shippori Mincho', serif;
-  font-size: 26px;
-  text-align: center;
-  margin-top: 275px;
-  margin-right: 850px;
-}
-
-.main-img {
-  max-width: 210px;
-  margin: -280px auto;
-}
-
-.home_img {
-  position: relative;
-}
-
-.home_img img {
-  max-width: 210px;
-}
-
-.list {
-  float: right;
-  margin-top: -12px;
-  margin-right: 65px;
-}
-
-#nav {
-  list-style: none;
-  overflow: hidden;
-}
-
-#nav li {
-  width: 120px;
-  text-align: center;
-  float: left;
-}
-
-#nav li .link {
-  text-decoration: none;
-  color: #707070;
-  font-weight: bold;
-  font-family: 'Shippori Mincho', serif;
-}
-
-.link {
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-.link:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-/* a,
-a span {
-  display: inline-block;
-}
-a span {
-  transition: 0.5s;
-}
-a:hover span {
-  -webkit-transform: rotateX(360deg);
-  transform: rotateX(360deg);
-} */
-
-/* a {
-  position: relative;
-  display: inline-block;
-  transition: 0.3s;
-}
-a::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  content: '';
-  width: 0;
-  height: 1px;
-  background-color: #f5f064;
-  transition: 0.3s;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-a:hover::after {
-  width: 100%;
-} */
-
-@media screen and (max-width: 1024px) {
-  .name {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 1px;
-    width: 1024px;
-  }
-
-  .main-img {
-    margin: 30px auto;
-  }
-
-  .list {
-    font-size: 23px;
-    float: left;
-    margin-top: 15px;
-    padding-left: 220px;
-    width: 1024px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .name {
-    width: 768px;
-  }
-
-  .list {
-    padding-left: 100px;
-    width: 768px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .name {
-    width: 540px;
-  }
-
-  .list {
-    margin-top: 15px;
-    padding-right: 0;
-    padding-left: 0;
-    width: 540px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .name {
-    width: 414px;
-  }
-
-  .list {
-    font-size: 15px;
-    width: 414px;
-  }
-
-  #nav li {
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .name {
-    width: 375px;
-  }
-
-  .list {
-    font-size: 14px;
-    width: 375px;
-    margin-left: -7px;
-  }
-
-  #nav li {
-    width: 75px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .name {
-    width: 360px;
-  }
-
-  .list {
-    font-size: 14px;
-    width: 360px;
-    margin-left: -15px;
-  }
-
-  #nav li {
-    width: 75px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .name {
-    width: 320px;
-  }
-
-  .list {
-    font-size: 13px;
-    margin-left: -25px;
-    width: 350px;
-  }
-
-  #nav li {
-    width: 70px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .name {
-    width: 280px;
-  }
-
-  .list {
-    font-size: 11px;
-    margin-left: -20px;
-    width: 280px;
-  }
-
-  #nav li {
-    width: 60px;
-  }
-}
 /*------------------------------
   ここから下がハンバーガーメニューに関するCSS
 ------------------------------*/
@@ -315,7 +102,8 @@ a:hover::after {
 #drawer-check:checked ~ .drawer-open span {
   background: #5e2946;
 }
-/* アイコンがクリックされたらアイコンが×印になるように上下の線を回転 */
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
 #drawer-check:checked ~ .drawer-open span::before {
   bottom: 0;
   transform: rotate(45deg);
@@ -348,9 +136,8 @@ a:hover::after {
   /* メニューを画面に入れる */
   width: 450px;
   height: 720px;
-   background-color: #5e2946;
+  background-color: #5e2946;
 }
-
 
 a {
     text-decoration:none;
@@ -358,10 +145,22 @@ a {
     font-family: 'Shippori Mincho', serif;
 }
 
+#li_h {
+  /* text-align: center; */
+  margin: 80px 190px;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#li_h:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #li_a {
   /* text-align: center; */
-  margin: 80px 187px;
-  color: #fff;
+  margin: 0 188px;
   display: inline-block;
   transition: 0.5s;
   -webkit-transform: scale(1);
@@ -374,8 +173,7 @@ a {
 
 #li_w {
   /* text-align: center; */
-  margin: -30px 192px;
-  color: #fff;
+  margin: 80px 192px;
   display: inline-block;
   transition: 0.5s;
   -webkit-transform: scale(1);
@@ -388,8 +186,7 @@ a {
 
 #li_n {
   /* text-align: center; */
-  margin: 80px 195px;
-  color: #fff;
+  margin: 0 195px;
   display: inline-block;
   transition: 0.5s;
   -webkit-transform: scale(1);
@@ -400,17 +197,77 @@ a {
   transform: scale(1.1);
 }
 
-#li_c {
-  /* text-align: center; */
-  margin: 0 180px;
+/* メール受付完了お知らせ */
+.copywright {
   color: #fff;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .copywright {
+  font-size: 10px;
+}
+}
+
+@media screen and (max-width: 360px) {
+
+.copywright {
+  margin-bottom: 5px;
+}
+}
+
+.success-message {
+  background: #fff;
+  width: 100%;
+  max-width: 600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 130px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.success {
+  font-family: 'Shippori Mincho', serif;
+}
+
+.success-response {
+  font-family: 'Shippori Mincho', serif;
+}
+
+.list {
+  margin-left: 445px;
+  padding-bottom: 70px;
+}
+
+#nav {
+  list-style: none;
+  overflow: hidden;
+}
+
+#nav li {
+  width: 120px;
+  text-align: center;
+  float: left;
+}
+
+#nav li .link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link {
+  color: #707070;
   display: inline-block;
   transition: 0.5s;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-#li_c:hover {
+.link:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <body>
+    <!-- <main>
+      <img id="image" />
+      <img id="default_img" />
+      <h1 id="title"></h1>
+      <div id="year"></div>
+      <div id="size"></div>
+      <div id="medium"></div>
+    </main> -->
+    <!-- <script>
+      fetch('https://cheyonly.microcms.io/api/v1/portrait/edlwrc1uuj_u', {
+        headers: {
+          'X-API-KEY': '8b151f62-8935-4377-a621-9ad95e8b0bcb',
+        },
+      })
+        .then((res) => res.json())
+        .then((json) => {
+          document.getElementById('image').src = json.image.url;
+          document.getElementById('default_img').src = json.default_img.url;
+          document.getElementById('title').innerHTML = json.title;
+          document.getElementById('year').innerHTML = json.year;
+          document.getElementById('size').innerHTML = json.size;
+          document.getElementById('medium').innerHTML = json.medium;
+        });
+    </script> -->
+
+    <div class="l-container">
+      <h1 class="ttl-news">お知らせ</h1>
+      <p class="txt-leader">
+        このページは<a href="https://microcms.io/" target="_blank" rel="noopener">microCMS</a
+        >を使った「お知らせ」のサンプルページです。
+      </p>
+
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        $(document).ready(function () {
+          //========================
+          //【ページングに必要な情報】
+
+          //★1ページに表示したい記事の数
+          const limit = 5;
+
+          const page = parseInt(new URLSearchParams(window.location.search).get('page')) || 1;
+          const offset = limit * (page - 1);
+          //========================
+
+          //microCMSからコンテンツ取得
+          fetch(
+            //★設定した項目
+            `https://cheyonly.microcms.io/api/v1/portrait?fields=image,default_img,title,year,size,medium&limit=${limit}&offset=${offset}`,
+            {
+              headers: {
+                //★APIキー
+                'X-API-KEY': '8b151f62-8935-4377-a621-9ad95e8b0bcb',
+              },
+            }
+          )
+            .then((response) => response.json())
+            .then((json) => {
+              for (const content of json.contents) {
+                //image
+                const image = content.image && content.image.url;
+                const disp_image = image && "<img src='" + image + "?w=300'>";
+
+                //default_img
+                const default_img = content.default_img && content.default_img.url;
+                const disp_default_img = default_img && "<img src='" + default_img + "?w=300'>";
+
+                //タイトル
+                const title = '<h2>' + content.title + '</h2>';
+
+                //日付
+                const year = "<p class='year'>" + content.year + '</p>';
+
+                //サイズ
+                const size = '<div class="box-size">' + content.size + '</div>';
+
+                //製作法
+                const medium = '<div class="box-medium">' + content.medium + '</div>';
+
+                //表示部分
+                $('#content').append(
+                  '<article class="article">' +
+                    (disp_image || '') +
+                    (disp_default_img || '') +
+                    title +
+                    year +
+                    size +
+                    medium +
+                    '</article>'
+                );
+              }
+
+              //========================
+              //ページング
+              const totalCount = json.totalCount;
+              const pageCount = Math.ceil(totalCount / limit);
+              const pager = `<ul class='pager'>${
+                //前のページリンクを表示
+                page >= 2 ? `<li><a href='./test.html?page=${page - 1}'>前のページへ</a></li>` : ''
+              }${
+                //必要なページを表示
+                Array.from(Array(pageCount))
+                  .map((noValue, test) => {
+                    const targetPage = test + 1;
+                    return targetPage === page
+                      ? `<li><span>${test + 1}</span></li>`
+                      : `<li><a href='./test.html?page=${test + 1}'>${test + 1}</a></li>`;
+                  })
+                  .join('\n')
+              }${
+                //次のページリンクを表示
+                page < pageCount ? `<li><a href='./test.html?page=${page + 1}'>次のページへ</a></li>` : ''
+              }</ul>`;
+              $('#content').append(pager);
+              //========================
+            })
+            .catch((e) => {
+              console.log(e.message);
+            });
+        });
+      </script>
+
+      <div id="content"></div>
+    </div>
+  </body>
+</html>

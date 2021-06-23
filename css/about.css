@@ -103,11 +103,13 @@ body {
 #drawer-check:checked ~ .drawer-open span::before {
   bottom: 0;
   transform: rotate(45deg);
+  background: #fff;
 }
 
 #drawer-check:checked ~ .drawer-open span::after {
   top: 0;
   transform: rotate(-45deg);
+  background: #fff;
 }
 
 /* メニューのデザイン*/
@@ -119,9 +121,9 @@ body {
   left: 100%;
   /* メニューを画面の外に飛ばす */
   z-index: 99;
-  background: #fff;
+  background: #000;
   transition: 0.5s;
-  color: white;
+  color: #000;
 }
 
 /* アイコンがクリックされたらメニューを表示 */
@@ -129,39 +131,76 @@ body {
   left: 0px;
   /* メニューを画面に入れる */
   width: 450px;
-  height: 610px;
-  background-color: #a7a3a3;
+  height: 720px;
+  background-color: #000;
 }
 
-#li_b {
-  text-align: center;
-  margin: 70px auto;
+a {
+    text-decoration:none;
+    color: #fff;
+    font-family: 'Shippori Mincho', serif;
+}
+
+#li_h {
+  /* text-align: center; */
+  margin: 80px 192px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#li_h:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #li_w {
-  text-align: center;
-  margin: 70px auto;
+  /* text-align: center; */
+  margin: -30px 192px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#li_w:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#li_n {
+  /* text-align: center; */
+  margin: 80px 195px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#li_n:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #li_c {
-  text-align: center;
-  margin: 70px auto;
+  /* text-align: center; */
+  margin: 0 180px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
-#li_f {
-  text-align: center;
-  margin: 70px auto;
+#li_c:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-#li_t {
-  text-align: center;
-  margin: 70px auto;
-}
-
-#li_i {
-  text-align: center;
-  margin: 70px auto;
-}
 
 /* ABOUT */
 .about {
@@ -204,6 +243,7 @@ p.myphoto-img img {
   /* background-color: rgb(74, 120, 29); */
   margin-left: 260px;
   margin-top: 230px;
+  font-size: 15px;
 }
 
 

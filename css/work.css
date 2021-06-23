@@ -14,7 +14,7 @@ a {
   color: #707070;
   font-family: 'Shippori Mincho', serif;
   writing-mode: vertical-lr;
-  font-size: 25px;
+  font-size: 26px;
   /* background-color: cyan; */
   width: 70px;
   height: 665px;
@@ -723,11 +723,13 @@ header {
 #drawer-check:checked ~ .drawer-open span::before {
   bottom: 0;
   transform: rotate(45deg);
+  background: #fff;
 }
 
 #drawer-check:checked ~ .drawer-open span::after {
   top: 0;
   transform: rotate(-45deg);
+  background: #fff;
 }
 
 /* メニューのデザイン*/
@@ -739,9 +741,9 @@ header {
   left: 100%;
   /* メニューを画面の外に飛ばす */
   z-index: 99;
-  background: #fff;
+  background: #000;
   transition: 0.5s;
-  color: white;
+  color: #000;
 }
 
 /* アイコンがクリックされたらメニューを表示 */
@@ -749,37 +751,125 @@ header {
   left: 0px;
   /* メニューを画面に入れる */
   width: 450px;
-  height: 610px;
-  background-color: #a7a3a3;
+  height: 720px;
+  background-color: #000;
 }
 
-#li_b {
-  text-align: center;
-  margin: 70px auto;
+a {
+    text-decoration:none;
+    color: #fff;
+    font-family: 'Shippori Mincho', serif;
 }
 
-#li_w {
+#li_a {
+  /* text-align: center; */
+  margin: 60px 191px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#li_a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* #li_a {
   text-align: center;
   margin: 70px auto;
+} */
+
+#li_n {
+  /* text-align: center; */
+  margin: -10px 198px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
+#li_n:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* #li_n {
+  text-align: center;
+  margin: 70px auto;
+} */
 
 #li_c {
-  text-align: center;
-  margin: 70px auto;
+  /* text-align: center; */
+  margin: 60px 184px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#li_c:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+/* #li_c {
+  text-align: center;
+  margin: 70px auto;
+} */
+
+#li_f {
+  /* text-align: center; */
+  margin: -10px 188px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#li_f:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* 
 #li_f {
   text-align: center;
   margin: 70px auto;
-}
-
-#li_t {
-  text-align: center;
-  margin: 70px auto;
-}
-
+} */
 #li_i {
+  /* text-align: center; */
+  margin: 60px 187px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#li_i:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* #li_i {
   text-align: center;
   margin: 70px auto;
+} */
+#li_t {
+  /* text-align: center; */
+  margin: -10px 198px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
+#li_t:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* #li_t {
+  text-align: center;
+  margin: 70px auto;
+} */
+
+
 /* ここまでハンバーガー */

@@ -25,34 +25,24 @@
           <!-- メニュー -->
           <nav class="drawer-content">
             <ul class="drawer-list">
-              <li class="drawer-item" id="li_b">
-                <a href="#" target="_blank">BLOG</a>
+              <li class="drawer-item" id="li_h">
+                <a href="index.html" target="_blank">HOME</a>
+              </li>
+              <!-- /.drawer-item -->
+              <li class="drawer-item" id="li_a">
+                <a href="about.html" target="_blank">ABOUT</a>
               </li>
               <!-- /.drawer-item -->
               <li class="drawer-item" id="li_w">
-                <a href="#2" target="_blank">WORKS</a>
+                <a href="works.html" target="_blank">WORK</a>
               </li>
               <!-- /.drawer-item -->
-              <li class="drawer-item" id="li_c">
-                <a href="file:///Users/urayoshie/Desktop/portfolio_practice/contact/index.html" target="_blank"
-                  >CONTACT</a
+              <li class="drawer-item" id="li_n">
+                <a href="news.html" target="_blank"
+                  >NEWS</a
                 >
               </li>
-              <!-- /.drawer-item -->
-              <li class="drawer-item" id="li_f">
-                <a href="https://www.facebook.com/yoshie.ura.77" target="_blank">Facebook</a>
-              </li>
-              <!-- /.drawer-item -->
-              <li class="drawer-item" id="li_t">
-                <a href="https://twitter.com/uracobo" target="_blank">Twitter</a>
-              </li>
-              <!-- /.drawer-item -->
-              <li class="drawer-item" id="li_i">
-                <a href="https://www.instagram.com/yoshie102217/" target="_blank">Instagram</a>
-              </li>
-              <!-- /.drawer-item -->
             </ul>
-            <!-- /.drawer-list -->
           </nav>
         </div>
         <div class="facebook">
@@ -72,42 +62,43 @@
         </div>
       </header>
       <!-- お問い合わせフォーム -->
+      <div class="contact-title">CONTACT</div>
       <div class="form">
         <div class="form-group">
-          <p class="form-label"><span class="form-label-required">必須</span>氏名</p>
+          <p class="form-label"><span class="form-label-required">&#8251;</span>NAME</p>
           <input
             type="text"
             id="contact-name"
             class="form-control"
-            placeholder="例）山田太郎"
+            placeholder="e.g）Che Yonly"
             data-validate="required|max:30"
           />
           <div class="invalid-feedback"></div>
         </div>
         <div class="form-group">
-          <p class="form-label"><span class="form-label-required">必須</span>電話番号</p>
+          <p class="form-label"><span class="form-label-required">&#8251;</span>TEL</p>
           <input
             type="text"
             id="contact-tel"
             class="form-control"
-            placeholder="例）000-0000-0000"
+            placeholder="e.g.）000-0000-0000"
             data-validate="tel"
           />
           <div class="invalid-feedback"></div>
         </div>
         <div class="form-group">
-          <p class="form-label"><span class="form-label-required">必須</span>メールアドレス</p>
+          <p class="form-label"><span class="form-label-required">&#8251;</span>E&#8722;Mail</p>
           <input
             type="email"
             id="contact-email"
             class="form-control"
-            placeholder="例）example@gmail.com"
+            placeholder="e.g.）example@gmail.com"
             data-validate="email"
           />
           <div class="invalid-feedback"></div>
         </div>
         <div class="form-group">
-          <p class="form-label isMsg"><span class="form-label-required">必須</span>お問い合わせ内容</p>
+          <p class="form-label isMsg"><span class="form-label-required">&#8251;</span>MESSAGE</p>
           <textarea
             id="contact-body"
             class="form-control"
@@ -118,9 +109,16 @@
           <div class="form-count"><span class="current"></span>/<span class="max"></span></div>
           <div class="invalid-feedback"></div>
         </div>
-        <input type="submit" id="contact-button" class="form-button" value="送信する" />
+        <div class="contact-responses">
+          お返事をさせていただくまでに、お時間を要する場合がございます。
+        </div>
+        <div class="contact-rule">
+          &#8251;入力必須項目です。
+        </div>
+        <input type="submit" id="contact-button" class="form-button" value="SEND" />
       </div>
     </div>
+    <footer class="copywright">&#169;&#160;2021&#160;CHE&#160;YONLY</footer>
     <script src="dist/contact.js" type="module"></script>
   </body>
 </html>

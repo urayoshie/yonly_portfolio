@@ -4,9 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>YONLY</title>
+    <link rel="icon" href="img/icon.jpg" />
+    <link rel="stylesheet" href="css/contact-success.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
   </head>
+
   <body>
-    <h1>お問い合わせが完了しました。</h1>
+    <div class="success-background">
+      <header>
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+
+          <!-- メニュー -->
+          <nav class="drawer-content">
+            <ul class="drawer-list">
+              <li class="drawer-item" id="li_h">
+                <a href="index.html" target="_blank">HOME</a>
+              </li>
+              <!-- /.drawer-item -->
+              <li class="drawer-item" id="li_a">
+                <a href="about.html" target="_blank">ABOUT</a>
+              </li>
+              <!-- /.drawer-item -->
+              <li class="drawer-item" id="li_w">
+                <a href="works.html" target="_blank">WORK</a>
+              </li>
+              <!-- /.drawer-item -->
+              <li class="drawer-item" id="li_n">
+                <a href="news.html" target="_blank"
+                  >NEWS</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="facebook">
+          <a href="https://instagram.com/ushibudou?utm_medium=copy_link" target="_blank"
+            ><img src="img/facebook.png" class="icon" alt=""
+          /></a>
+        </div>
+        <div class="instagram">
+          <a href="https://instagram.com/ushibudou?utm_medium=copy_link" target="_blank"
+            ><img src="img/instagram.png" class="icon" alt=""
+          /></a>
+        </div>
+        <div class="twitter">
+          <a href="https://instagram.com/ushibudou?utm_medium=copy_link" target="_blank"
+            ><img src="img/twitter.png" class="icon" alt=""
+          /></a>
+        </div>
+      </header>
+      <!-- お問い合わせ完了 -->
+      <div class="success-message">
+        <h3 class="success">お問い合わせが完了しました。</h3>
+        <p class="success-response">
+          お問い合わせいただきありがとうございました。<br>
+          お問い合わせを受け付けました。<br>
+          折り返しご連絡いたしますので、<br>
+          恐れ入りますが、しばらくお待ちください。
+        </p>
+      </div>
+      <div class="list-box">
+        <div class="list">
+          <ul id="nav">
+            <li>
+              <a href="index.html" class="link" id="contact"><span>HOME</span></a>
+            </li>
+            <li>
+              <a href="about.html" class="link" id="about"><span>ABOUT</span></a>
+            </li>
+            <li>
+              <a href="works.html" class="link" id="work"><span>WORK</span></a>
+            </li>
+            <li>
+              <a href="news.html" class="link" id="news"><span>NEWS</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <footer class="copywright">&#169;&#160;2021&#160;CHE&#160;YONLY</footer>
+    </div>
+    <script src="dist/contact.js" type="module"></script>
   </body>
 </html>
