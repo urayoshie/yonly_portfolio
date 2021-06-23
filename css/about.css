@@ -15,14 +15,14 @@ body {
 .instagram img {
   width: 25px;
   float: left;
-  margin-top: -40px;
+  margin-top: -41px;
   margin-left: 135px;
 }
 
 .twitter img {
   width: 25px;
   margin-left: 180px;
-  margin-top: -39px;
+  margin-top: -41px;
   float: left;
 }
 
@@ -142,65 +142,36 @@ a {
 }
 
 #li_h {
-  /* text-align: center; */
-  margin: 80px 192px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-#li_h:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  text-align: center;
+  margin: 70px auto;
+  margin-top: 150px;
 }
 
 #li_w {
-  /* text-align: center; */
-  margin: -30px 192px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-#li_w:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  text-align: center;
+  margin: 70px auto;
 }
 
 #li_n {
-  /* text-align: center; */
-  margin: 80px 195px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-#li_n:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  text-align: center;
+  margin: 70px auto;
 }
 
 #li_c {
-  /* text-align: center; */
-  margin: 0 180px;
-  color: #fff;
+  text-align: center;
+  margin: 70px auto;
+}
+
+.link {
   display: inline-block;
   transition: 0.5s;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-
-#li_c:hover {
+.link:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 /* ABOUT */
 .about {

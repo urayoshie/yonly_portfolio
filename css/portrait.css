@@ -10,14 +10,14 @@
 .instagram img {
   width: 25px;
   float: left;
-  margin-top: -40px;
+  margin-top: -41px;
   margin-left: 135px;
 }
 
 .twitter img {
   width: 25px;
   margin-left: 180px;
-  margin-top: -39px;
+  margin-top: -41px;
   float: left;
 }
 
@@ -91,7 +91,7 @@
 
 /* アイコンがクリックされたら真ん中の線を透明にする */
 #drawer-check:checked ~ .drawer-open span {
-  background: black;
+  background: #fff;
 }
 
 /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
@@ -124,18 +124,44 @@
   left: 0px;
   /* メニューを画面に入れる */
   width: 450px;
-  height: 610px;
-  background-color: #a7a3a3;
+  height: 720px;
+  background-color: #fff;
 }
 
-#li_b {
+a {
+    text-decoration:none;
+    color: #000;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: bold;
+}
+
+#li_h {
+  text-align: center;
+  margin: 70px auto;
+  margin-top: 100px;
+}
+
+#li_h :hover{
+  color: #676d7b;
+}
+
+
+#li_a {
   text-align: center;
   margin: 70px auto;
 }
 
-#li_w {
+#li_a :hover{
+  color: #e5accd;
+}
+
+#li_n {
   text-align: center;
   margin: 70px auto;
+}
+
+#li_n :hover{
+  color: #39a1a9;
 }
 
 #li_c {
@@ -143,21 +169,41 @@
   margin: 70px auto;
 }
 
-#li_f {
+#li_c :hover{
+  color: #45ae5d;
+}
+
+#li_fl {
   text-align: center;
   margin: 70px auto;
 }
 
-#li_t {
+#li_fl :hover{
+  color: #938521;
+}
+
+
+#li_p {
   text-align: center;
   margin: 70px auto;
 }
 
-#li_i {
-  text-align: center;
-  margin: 70px auto;
+#li_p :hover{
+  color: #b56666;
 }
 
+.link {
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.link:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* swipwer */
 .swiper-slide {
   max-width: 255px;
   height: 255px;

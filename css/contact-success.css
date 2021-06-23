@@ -19,14 +19,14 @@ body {
 .instagram img {
   width: 25px;
   float: left;
-  margin-top: -40px;
+  margin-top: -41px;
   margin-left: 135px;
 }
 
 .twitter img {
   width: 25px;
   margin-left: 180px;
-  margin-top: -39px;
+  margin-top: -41px;
   float: left;
 }
 
@@ -140,61 +140,30 @@ body {
 }
 
 a {
-    text-decoration:none;
-    color: #fff;
-    font-family: 'Shippori Mincho', serif;
+  color: #fff;
+  text-decoration:none;
+  font-family: 'Shippori Mincho', serif;
 }
 
 #li_h {
-  /* text-align: center; */
-  margin: 80px 190px;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_h:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  text-align: center;
+  margin: 70px auto;
+  margin-top: 150px;
 }
 
 #li_a {
-  /* text-align: center; */
-  margin: 0 188px;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_a:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  text-align: center;
+  margin: 70px auto;
 }
 
 #li_w {
-  /* text-align: center; */
-  margin: 80px 192px;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_w:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  text-align: center;
+  margin: 70px auto;
 }
 
 #li_n {
-  /* text-align: center; */
-  margin: 0 195px;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_n:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  text-align: center;
+  margin: 70px auto;
 }
 
 /* メール受付完了お知らせ */
@@ -228,7 +197,7 @@ a {
 
 .list {
   margin-left: 445px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 #nav {
@@ -243,12 +212,12 @@ a {
 }
 
 #nav li .link {
+  color: #707070;
   text-decoration: none;
   font-weight: bold;
 }
 
 .link {
-  color: #707070;
   display: inline-block;
   transition: 0.5s;
   -webkit-transform: scale(1);

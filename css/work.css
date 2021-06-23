@@ -317,6 +317,17 @@ header {
   opacity: 1;
 }
 
+.link {
+  display: inline-block;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.link:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 1024px) {
   .photos {
     max-width: 100%;
@@ -762,114 +773,35 @@ a {
 }
 
 #li_a {
-  /* text-align: center; */
-  margin: 60px 191px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_a:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-/* #li_a {
   text-align: center;
   margin: 70px auto;
-} */
+  margin-top: 100px;
+}
 
 #li_n {
-  /* text-align: center; */
-  margin: -10px 198px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_n:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-/* #li_n {
   text-align: center;
   margin: 70px auto;
-} */
+}
 
 #li_c {
-  /* text-align: center; */
-  margin: 60px 184px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_c:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-/* #li_c {
   text-align: center;
   margin: 70px auto;
-} */
+}
 
-#li_f {
-  /* text-align: center; */
-  margin: -10px 188px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_f:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* 
 #li_f {
   text-align: center;
   margin: 70px auto;
-} */
+}
+
 #li_i {
-  /* text-align: center; */
-  margin: 60px 187px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_i:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* #li_i {
   text-align: center;
   margin: 70px auto;
-} */
+}
+
 #li_t {
-  /* text-align: center; */
-  margin: -10px 198px;
-  color: #fff;
-  display: inline-block;
-  transition: 0.5s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#li_t:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* #li_t {
   text-align: center;
   margin: 70px auto;
-} */
+}
 
 
 /* ここまでハンバーガー */
