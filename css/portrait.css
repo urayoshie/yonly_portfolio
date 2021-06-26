@@ -44,7 +44,7 @@
 
 .drawer {
   margin-left: 25px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 /* チェックボックスは非表示に */
@@ -217,6 +217,7 @@ p.default_img img {
   width: 400px;
 }
 
+
 .works-comment {
   font-family: 'Shippori Mincho', serif;
   text-align: center;
@@ -241,6 +242,11 @@ p.default_img {
   font-family: 'Shippori Mincho', serif;
 }
 
+@media screen and (max-width: 768px) {
+  .default_img {
+    margin-left: 5px;
+  }
+}
 @media screen and (max-width: 480px) {
   .default_img {
     margin-left: -23px;
@@ -259,6 +265,14 @@ p.default_img {
 }
 
 @media screen and (max-width: 375px) {
+  p.default_img img {
+    width: 360px;
+  }
+
+  .default_img {
+    margin-left: -23px;
+  }
+
   .swiper-container {
     max-width: 375px;
   }
@@ -269,6 +283,14 @@ p.default_img {
 }
 
 @media screen and (max-width: 360px) {
+p.default_img img {
+  width: 340px;
+}
+
+.default_img {
+   margin-left: -20px;
+}
+
   .swiper-container {
     max-width: 360px;
   }
@@ -279,6 +301,9 @@ p.default_img {
 }
 
 @media screen and (max-width: 320px) {
+  p.default_img img {
+    width: 300px;
+  }
   .swiper-container {
     max-width: 320px;
     height: 185px;
@@ -298,6 +323,10 @@ p.default_img {
 }
 
 @media screen and (max-width: 280px) {
+  p.default_img img {
+    width: 260px;
+  }
+
   .swiper-container {
     max-width: 280px;
     height: 170px;

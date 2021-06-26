@@ -1,8 +1,16 @@
 @import url(sanitize.css);
 
+.background {
+  background: linear-gradient(90deg, #000 0%, #000 50%, #5e2946 50%, #5e2946 100%);
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  width: 100vw;
+  height: 50vw;
+}
+
 body {
-  background-color: black;
-  max-width: 100%;
+  background: #000;
 }
 
 .facebook img {
@@ -49,7 +57,7 @@ body {
 
 .drawer {
   margin-left: 25px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 /* チェックボックスは非表示に */
@@ -179,10 +187,10 @@ a {
   font-family: 'Shippori Mincho', serif;
   writing-mode: vertical-lr;
   font-size: 26px;
-  text-align: center;
-  margin-top: -420px;
-  margin-right: 730px;
-  float: right;
+  /* float: right; */
+  margin-top: 40px;
+  padding-left: 35px;
+  /* background: tomato; */
 }
 
 p.myphoto-img img {
@@ -190,149 +198,90 @@ p.myphoto-img img {
 }
 
 .myphoto-img {
+  /* position:absolute; */
+  text-align: center;
   /* background-color: burlywood; */
-  width: 80%;
-  max-width: 730px;
-  height: 650px;
-  padding-left: 250px;
-  padding-top: 200px; 
+  width: 50vw;
+  height: 1vw;
+  padding-top: 180px;
 }
 
-.about-content {
-  background-color: #5e2946;
-  width: 80%;
-  max-width: 725px;
-  height: 750px;
-  font-family: 'Shippori Mincho', serif;
-  float: right;
-  color: #fff;
-  line-height: 30px;
-  margin-top: -750px;
-}
+/* .about-content {
+  width: 20vw;
+  height: 23vw;
+  margin-left: 720px; 
+} */
 
 .introduction {
-  /* background-color: rgb(74, 120, 29); */
-  margin-left: 260px;
-  margin-top: 230px;
-  font-size: 15px;
+  font-family: 'Shippori Mincho', serif;
+  color: #fff;
+  float: right;
+  margin-top: -150px;
+  padding-right: 200px;
+  /* background: salmon; */
 }
-
 
 @media screen and (max-width: 1024px) {
-  .myphoto-img {
-  /* background-color: burlywood; */
-  padding-left: 150px;
-  padding-top: 200px;
+.background {
+  height: 70vw;
 }
 
-.about-content {
-  width: 50%;
-}
 .introduction {
-  /* background-color: rgb(74, 120, 29); */
-  margin-left: 150px;
-}
-.about {
-  margin-top: -420px;
-  margin-right: 525px;
+  padding-right: 100px;
 }
 }
-
 
 @media screen and (max-width: 768px) {
-.myphoto-img {
-  padding-left: 100px;
+.background {
+  height: 90vw;
 }
 
 .introduction {
-  margin-left: 60px;
-}
-.about {
-  margin-right: 395px;
+  padding-right: 50px;
 }
 }
 
 @media screen and (max-width: 540px) {
-.myphoto-img {
-  padding-left: 50px;
+.background {
+  height: 720px;
 }
 
 .introduction {
-  margin-left: 40px;
+  padding-right: 25px;
+  padding-top: 25px;
   font-size: 12px;
 }
+
 .about {
-  margin-right: 270px;
-  font-size: 22px;
+  padding-left: 235px;
 }
 }
 
 @media screen and (max-width: 414px) {
-.myphoto-img {
-  width: 80%;
-  height:1px;
-  padding-left: 120px;
-  padding-top: 30px; 
+.background {
+  background: #000;
 }
 
 .about {
-  margin: 230px auto;
   writing-mode: horizontal-tb;
-  float: none;
+  padding-left: 160px;
+  margin-top: 220px;
 }
 
-.introduction {
-  padding-top: 60px;
-  margin-left: 110px;
-  font-size: 12px;
+.myphoto-img {
+  padding-top: 30px;
+  padding-left: 120px;
 }
 
 .about-content {
-  float: none;
-  width: 100%;
-  height: 360px;
-  margin-top: -230px;
-  line-height: 25px;
-}
-}
-
-@media screen and (max-width: 375px) {
-  .myphoto-img {
-  padding-left: 100px;
+  background: #5e2946;
+  width: 414px;
+  height: 370px;
 }
 
 .introduction {
-  margin-left: 90px;
-}
-
-}
-
-@media screen and (max-width: 360px) {
-.myphoto-img {
-  padding-left: 90px;
-}
-
-.introduction {
-  margin-left: 80px;
-}
-}
-
-@media screen and (max-width: 320px) {
-.myphoto-img {
-  padding-left: 70px;
-}
-
-.introduction {
-  margin-left: 70px;
-}
-}
-
-@media screen and (max-width: 280px) {
-.myphoto-img {
-  padding-left: 50px;
-}
-
-.introduction {
-  margin-left: 40px;
+  padding-right: 90px;
+  padding-top: 250px;
+  font-size: 12px;
 }
 }

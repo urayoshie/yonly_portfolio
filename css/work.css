@@ -15,20 +15,19 @@ a {
   font-family: 'Shippori Mincho', serif;
   writing-mode: vertical-lr;
   font-size: 26px;
-  /* background-color: cyan; */
   width: 70px;
   height: 665px;
   text-align: center;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 header {
   max-width: 100%;
-  /* background-color: blanchedalmond; */
 }
 
 .photo-1 {
   background-color: #7c0a36;
+
   max-width: 255px;
   height: 255px;
   margin-left: 155px;
@@ -329,9 +328,9 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  .photos {
+  /* .photos {
     max-width: 100%;
-  }
+  } */
 
   .works {
     writing-mode: horizontal-tb;
@@ -350,47 +349,19 @@ header {
   }
 
   .photo-3 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
-  }
-
-  .photo-3 .active {
-    transition: ease-out;
+    display:none;
   }
 
   .photo-4 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
+    display:none;
   }
-
-  .photo-4 .active {
-    transition: ease-out;
-  }
-
-  .photo-4:hover .active {
-    opacity: 0;
-  }
-
+ 
   .photo-5 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
-  }
-
-  .photo-5 .active {
-    transition: ease-out;
+    display:none;
   }
 
   .photo-6 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
-  }
-
-  .photo-6 .active {
-    transition: ease-out;
+    display:none;
   }
 
   .photo-7 {
@@ -404,43 +375,19 @@ header {
   }
 
   .photo-9 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
-  }
-
-  .photo-9 .active {
-    transition: ease-out;
+    display:none;
   }
 
   .photo-10 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
-  }
-
-  .photo-10 .active {
-    transition: ease-out;
+    display:none;
   }
 
   .photo-11 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
-  }
-
-  .photo-11 .active {
-    transition: ease-out;
+    display:none;
   }
 
   .photo-12 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
-  }
-
-  .photo-12 .active {
-    transition: ease-out;
+    display:none;
   }
 
   .photo-13 {
@@ -454,13 +401,7 @@ header {
   }
 
   .photo-15 {
-    max-width: 0;
-    height: 0;
-    position: fixed;
-  }
-
-  .photo-15 .active {
-    transition: ease-out;
+    display:none;
   }
 }
 
@@ -515,18 +456,6 @@ header {
     font-size: 18px;
   }
 
-  .photo-7 {
-    margin-left: 255px;
-    margin-top: -510px;
-  }
-
-  .photo-8 {
-    margin-left: 255px;
-    margin-top: 0;
-    padding-top: 95px;
-    font-size: 18px;
-  }
-
   .photo-13 {
     margin-left: 510px;
     margin-top: -510px;
@@ -550,70 +479,34 @@ header {
   }
 
   .photo-1 {
-    max-width: 255px;
-    height: 255px;
     margin-left: 75px;
   }
 
   .photo-2 {
-    max-width: 255px;
-    height: 255px;
     margin-left: 75px;
     padding-top: 100px;
   }
 
-  .photo-3 {
-    max-width: 0;
-    height: 0;
-  }
-
-  .photo-4 {
-    max-width: 0;
-    height: 0;
-  }
-
-  .photo-5 {
-    max-width: 0;
-    height: 0;
-  }
-
-  .photo-6 {
-    max-width: 0;
-    height: 0;
-  }
-
   .photo-7 {
-    max-width: 255px;
-    height: 255px;
     margin-left: 75px;
     margin-top: 0;
   }
 
   .photo-8 {
-    max-width: 255px;
-    height: 255px;
     margin-left: 75px;
     margin-top: 0;
     padding-top: 100px;
   }
 
   .photo-13 {
-    max-width: 255px;
-    height: 255px;
     margin-left: 75px;
     margin-top: 0;
   }
 
   .photo-14 {
-    max-width: 255px;
-    height: 255px;
     margin-left: 75px;
     margin-top: 0;
     padding-top: 120px;
-  }
-  .photo-15 {
-    max-width: 0;
-    height: 0;
   }
 }
 
@@ -680,7 +573,7 @@ header {
 
 .drawer {
   margin-left: 25px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 /* チェックボックスは非表示に */
@@ -775,7 +668,7 @@ a {
 #li_a {
   text-align: center;
   margin: 70px auto;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 #li_n {
@@ -802,6 +695,4 @@ a {
   text-align: center;
   margin: 70px auto;
 }
-
-
 /* ここまでハンバーガー */

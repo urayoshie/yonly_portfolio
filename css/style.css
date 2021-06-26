@@ -52,7 +52,7 @@ body {
   font-size: 26px;
   text-align: center;
   margin-top: 275px;
-  margin-right: 850px;
+  margin-right: 825px;
 }
 
 .main-img {
@@ -178,7 +178,9 @@ a:hover::after {
     margin-top: 15px;
     padding-right: 0;
     padding-left: 0;
+    margin-left: -20px;
     width: 540px;
+    font-size: 19px;
   }
 }
 
@@ -266,7 +268,7 @@ a:hover::after {
 
 .drawer {
   margin-left: 25px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 /* チェックボックスは非表示に */
@@ -353,9 +355,9 @@ a:hover::after {
 
 
 a {
-    text-decoration:none;
-    color: #fff;
-    font-family: 'Shippori Mincho', serif;
+  text-decoration:none;
+  color: #fff;
+  font-family: 'Shippori Mincho', serif;
 }
 
 #li_a {
