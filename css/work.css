@@ -27,7 +27,7 @@ header {
 
 .photo-1 {
   background-color: #7c0a36;
-
+  width: 100%;
   max-width: 255px;
   height: 255px;
   margin-left: 155px;
@@ -48,6 +48,7 @@ header {
 }
 
 .photo-2 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #2f3d61;
@@ -60,6 +61,7 @@ header {
 }
 
 .photo-3 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #b56533;
@@ -81,6 +83,7 @@ header {
 }
 
 .photo-4 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #39a1a9;
@@ -102,6 +105,7 @@ header {
 }
 
 .photo-5 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #b5b5b5;
@@ -123,6 +127,7 @@ header {
 }
 
 .photo-6 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #e5accd;
@@ -144,6 +149,7 @@ header {
 }
 
 .photo-7 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #e9d069;
@@ -165,6 +171,7 @@ header {
 }
 
 .photo-8 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #2c5a4e;
@@ -178,6 +185,7 @@ header {
 }
 
 .photo-9 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #6b4682;
@@ -199,6 +207,7 @@ header {
 }
 
 .photo-10 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #3360a4;
@@ -220,6 +229,7 @@ header {
 }
 
 .photo-11 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #b56666;
@@ -241,6 +251,7 @@ header {
 }
 
 .photo-12 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #45ae5d;
@@ -262,6 +273,7 @@ header {
 }
 
 .photo-13 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #938521;
@@ -283,6 +295,7 @@ header {
 }
 
 .photo-14 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #5e2946;
@@ -296,6 +309,7 @@ header {
 }
 
 .photo-15 {
+  width: 100%;
   max-width: 255px;
   height: 255px;
   background-color: #676d7b;
