@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-$(document).ready(function () {
+export const fetchNews = () => {
   //========================
   //【ページングに必要な情報】
 
@@ -69,4 +69,4 @@ $(document).ready(function () {
     .catch((e) => {
       console.log(e.message);
     });
-});
+}

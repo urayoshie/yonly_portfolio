@@ -1,22 +1,26 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const outputPath = path.resolve(__dirname, 'dist');
+const glob = require('glob');
+const htmlPath = './src/pages/';
+const htmlPlugins = glob.sync(`${htmlPath}**/*.html`).map((filePath) => {
+  return new HtmlWebpackPlugin({
+    template: filePath,
+    filename: filePath.replace(htmlPath, ''),
+  });
+});
 
 module.exports = {
+  entry: ['@babel/polyfill','./src/index.js'],
   output: {
     filename: '[name].js',
     path: outputPath,
-    clean: true
-  },
-  entry: {
-    news: ['./js/news.js'],
-    works: ['./js/works.js'],
-    contact: ['./js/contact.js'],
   },
   // エラーを回避するため
   devtool: 'eval-source-map',
   devServer: {
     // ディレクトリを指定（必要）
-    contentBase: './',
+    contentBase: outputPath,
     // 開くファイル（index.html を開く）
     openPage: './',
   },
@@ -32,4 +36,5 @@ module.exports = {
       },
     ],
   },
+  plugins: htmlPlugins,
 };

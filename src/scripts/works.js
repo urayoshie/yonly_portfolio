@@ -2,7 +2,7 @@ import $ from 'jquery';
 import './modaal.min.js';
 import Swiper from './swiper.min.js';
 
-window.addEventListener('DOMContentLoaded', () => {
+export const fetchWorkImages = () => {
   const modalSettings = {
     slidesPerView: 2,
     loop: true,
@@ -66,4 +66,4 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   };
   fetchImageData();
-});
+};
